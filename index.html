@@ -30,7 +30,7 @@
             }
 
             next() {
-                this.seed = (this.a * this.seed + this.c) % this.m;
+                this.seed = (this.a * (this.seed ^ this.c) + this.c) % this.m;
                 return this.seed / this.m; // normalize to [0, 1]
             }
         }
