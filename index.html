@@ -115,7 +115,7 @@
         document.getElementById("character").innerText = character;
         let codePoint = character.codePointAt(0).toString(16).toUpperCase();
 
-        fetch("https://gist.githubusercontent.com/QuantumV2/206ca1c6362fcb790414452ea1fc2e2f/raw/aba4b2a37ceb1528ffa05986c2eb5294f68a5f42/UnicodeNames.json")
+        fetch("https://gist.githubusercontent.com/QuantumV2/206ca1c6362fcb790414452ea1fc2e2f/raw/")
         .then(response => response.json())
         .then(data => {
             unicodeNames = data;
